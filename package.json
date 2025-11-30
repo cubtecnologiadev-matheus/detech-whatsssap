@@ -1,0 +1,22 @@
+{
+  "name": "whatsapp-validator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Validador sequencial de números no WhatsApp (sem envio)",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "qrcode": "^1.5.3",
+    "socket.io": "^4.7.5",
+    "whatsapp-web.js": "^1.23.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "puppeteer": "^22.10.0"
+  }
+}

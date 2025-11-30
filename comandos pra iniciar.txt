@@ -1,0 +1,15 @@
+Comando 1 —instalar pendências (copiar/colar tudo)
+-----------------------------------------------------------------------------
+cd /d "C:\Users\mathes\Desktop\whatsapp-campaign-app"
+if exist node_modules rmdir /s /q node_modules
+if exist package-lock.json del /f /q package-lock.json
+rem **deixe vazio** para permitir o download do Chromium do Puppeteer
+set PUPPETEER_SKIP_DOWNLOAD=
+npm i
+npm i puppeteer --save-dev
+=============================================================================
+Comando 2 — iniciar o painel
+----------
+npm start
+=========
+(depois que iniciar, abra no navegador: http://localhost:3000 )
