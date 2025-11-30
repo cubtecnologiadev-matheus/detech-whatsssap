@@ -32,17 +32,43 @@ Ideal para:
 No Windows, você pode usar o script `instalar pendencias.bat`  
 **ou** rodar os comandos manualmente:
 
-```bat
-:: Ir até a pasta do projeto (ajuste se o caminho for diferente)
-cd /d "C:\Users\usuario\Desktop\detech whatsssap\detech whatsssap"
+▶️ Como iniciar o painel
 
-:: Limpar instalações antigas (opcional)
-if exist node_modules rmdir /s /q node_modules
-if exist package-lock.json del /f /q package-lock.json
+Depois de instaladas as dependências:
 
-:: Deixar vazio para permitir o download do Chromium do Puppeteer
-set PUPPETEER_SKIP_DOWNLOAD=
+npm start
 
-:: Instalar dependências
-npm install
-npm install puppeteer --save-dev
+
+Em seguida, abra no navegador:
+
+http://localhost:3000
+
+
+Siga as instruções do sistema para autenticar no WhatsApp Web (caso use QR Code) e iniciar o processo de verificação dos números.
+
+📁 Estrutura básica do projeto
+detech-whatsssap/
+├── index.js                 # Arquivo principal da aplicação
+├── package.json             # Dependências e scripts npm
+├── package-lock.json
+├── public/                  # Arquivos estáticos (se aplicável)
+├── runs/                    # Saídas / relatórios de execuções
+├── comandos pra iniciar.txt # Comandos de ajuda
+├── instalar pendencias.bat  # Script para instalar dependências
+└── README.md                # Documentação do projeto
+
+⚠️ Aviso de uso
+
+Este projeto deve ser usado apenas para fins legais, como:
+
+Validação de base própria de contatos
+
+Ferramentas internas de atendimento e organização
+
+O uso para spam ou violação dos termos de uso do WhatsApp é de responsabilidade exclusiva do usuário.
+
+👨‍💻 Autor
+
+Matheus – Cub Tecnologia Dev
+💻 Desenvolvimento Web & Automação
+📧 cubtecnologia.dev@gmail.com
